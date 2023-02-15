@@ -1,6 +1,7 @@
 html {
   width: 100vw;
   background-color: #4E312D;
+  overflow-x: hidden;
 }
 
 .font1{

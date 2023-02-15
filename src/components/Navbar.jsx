@@ -9,7 +9,7 @@ const Navbar = () => {
                 ZIMMER KENNEDY
               </span>
               <span className="left-side-navbar-items font3">
-                JUNIOR WEB DEVELOPER
+                FULL STACK DEVELOPER
               </span>
             </div>
             <div className="right-side-navbar">

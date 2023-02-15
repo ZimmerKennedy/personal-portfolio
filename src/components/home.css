@@ -19,8 +19,8 @@
   font-size: 1.8rem;
 }
 .right-side-navbar-items:hover, .left-side-navbar-items:hover {
-    color: gold; /* Change the color to red */
-    font-weight: bold; /* Make the font weight bold */
+    color: gold; 
+    font-weight: bold; 
     cursor: pointer;
     font-size: 2rem;
   }
@@ -34,4 +34,18 @@
   top: 40rem;
   color: #E0A96D;
   font-size: 1.8rem;
+}
+
+.logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.pernLogo {
+  opacity: 0.4;
+  pointer-events: none;
 }
