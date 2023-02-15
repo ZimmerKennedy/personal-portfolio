@@ -2,6 +2,7 @@ html {
   width: 100vw;
   background-color: #4E312D;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .font1{
