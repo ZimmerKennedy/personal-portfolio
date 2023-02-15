@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     display: flex;
     font-size: 1rem;
     border-bottom: 0.5px solid #E0A96D;
@@ -7,7 +7,7 @@
     padding-top: 1rem;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
   }
   .left-side-navbar-items {
     padding: 1rem;
@@ -17,5 +17,11 @@
   .right-side-navbar-items {
     padding: 1.5rem;
     color: #FBEEC1;
+  }
+  .right-side-navbar-items:hover, .left-side-navbar-items:hover {
+    color: gold; 
+    font-weight: bold; 
+    cursor: pointer;
+    font-size: 2rem;
   }
 
