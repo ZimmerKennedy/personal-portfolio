@@ -2,3 +2,15 @@ html {
   width: 100vw;
   background-color: #4E312D;
 }
+
+.font1{
+  font-family: 'Inter Tight', sans-serif;
+}
+.font2{
+  font-family: Helvetica, sans-serif;
+}
+.font3{
+  font-family: 'Inter Tight', sans-serif;
+}
+
+/* Hex codes: Beige #DDC3A5, Black-brown #201E20, Tan #E0A96D */

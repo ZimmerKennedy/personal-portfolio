@@ -1,33 +1,7 @@
-.font1{
-  font-family: 'Inter Tight', sans-serif;
-}
-.font2{
-  font-family: Helvetica, sans-serif;
-}
-.font3{
-  font-family: 'Inter Tight', sans-serif;
-}
-
-/* Hex codes: Beige #DDC3A5, Black-brown #201E20, Tan #E0A96D */
 
 
-.navbar{
-  display: flex;
-  font-size: 1rem;
-  border-bottom: 0.5px solid #E0A96D;
-  height: 2.5rem;
-  justify-content: space-between;
-  padding-top: 1rem;
-}
-.left-side-navbar-items {
-  padding: 1rem;
-  color: #FBEEC1;
-}
 
-.right-side-navbar-items {
-  padding: 1.5rem;
-  color: #FBEEC1;
-}
+
 
 .contents{
   display: flex;

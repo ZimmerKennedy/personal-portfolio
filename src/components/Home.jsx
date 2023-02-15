@@ -1,24 +1,11 @@
 import React from "react";
 import "./home.css"
+import Navbar from "./Navbar";
 
-function App() {
+function Home() {
   return (
         <div className="container">
-          <div className="navbar">
-            <div className="left-side-navbar">
-              <span className="left-side-navbar-items font3">
-                ZIMMER KENNEDY
-              </span>
-              <span className="left-side-navbar-items font3">
-                JUNIOR WEB DEVELOPER
-              </span>
-            </div>
-            <div className="right-side-navbar">
-              <span className="right-side-navbar-items">Projects</span>
-              <span className="right-side-navbar-items">About</span>
-              <span className="right-side-navbar-items">Contact</span>
-            </div>
-          </div>
+            <Navbar />
           <section className="contents font2">
             <div className="left-side-contents">
               <div className="left-side-content-items">I Have not failed.</div>
@@ -41,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
