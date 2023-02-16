@@ -1,8 +1,9 @@
 .container{
     height: 100vh;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
+
 .section {
   display: flex;
   justify-content: center;
@@ -14,7 +15,7 @@
     background-color: #4E312D;
   } 
   #section2 {
-    background-color: blue;
+    background-color: #E0A96D;
   } 
    #section3 {
     background-color: red;

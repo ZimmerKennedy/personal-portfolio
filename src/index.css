@@ -3,6 +3,7 @@ html {
   height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: white;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
   font-family: 'Inter Tight', sans-serif;
 }
 
-/* Hex codes: Beige #DDC3A5, Black-brown #201E20, Tan #E0A96D */
+/* Hex codes: Beige #DDC3A5, Black-brown #4E312D, Tan #E0A96D */
 
 /* body::-webkit-scrollbar {
   display: none;
