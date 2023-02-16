@@ -1,7 +1,18 @@
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./home.css";
+
 function Home() {
+  const [wordIndex, setWordIndex] = useState(0);
+  const words = ["Software Engineer","Full-Stack Developer", "Web App Developer", "Front-End Developer", ,"Back-End Developer"];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setWordIndex((wordIndex) => (wordIndex + 1) % words.length);
+    }, 1500);
+
+    return () => clearInterval(intervalId);
+  }, [words.length]);
+
   return (
     <div className="section">
       <div className="contents">
@@ -14,7 +25,7 @@ function Home() {
         </div>
         <div className="middle-contents">
           <div className="middle-content-items font3">Zimmer Kennedy</div>
-          <div className="middle-content-items font3">Full-Stack Developer</div>
+          <div className="middle-content-items font3">{words[wordIndex]}</div>
         </div>
         <div className="right-side-contents">
           <div className="right-side-content-items">
@@ -30,12 +41,11 @@ function Home() {
               stroke="#ffffff"
               strokeWidth="10"
               fill="none"
-              />
+            />
           </svg>
         </div>
       </div>
     </div>
-              
   );
 }
 
