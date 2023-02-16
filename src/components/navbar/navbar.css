@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     font-size: 1rem;
-    border-bottom: 0.5px solid #E0A96D;
+    border-bottom: 0.5px solid white;
     height: 2.5rem;
     justify-content: space-between;
     padding-top: 1rem;
@@ -10,15 +10,18 @@
   left: 0;
   z-index: 100;
   width: 100%;
+  backdrop-filter: blur(3px);
   }
   .left-side-navbar-items {
     padding: 1rem;
     color: #FBEEC1;
+    /* color: #E8D0A9; */
   }
   
   .right-side-navbar-items {
     padding: 1.5rem;
-    color: #FBEEC1;
+    color: #E8D0A9;
+    /* color: #FBEEC1; */
   }
   .right-side-navbar-items:hover, .left-side-navbar-items:hover {
     color: gold; 

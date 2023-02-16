@@ -10,16 +10,26 @@
   display: flex;
   justify-content: space-evenly;
 }
-
+.middle-contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: white;
+}
 .left-side-content-items {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 90%;
-  bottom: 10rem;
-  color: #E0A96D;
-  font-size: 1.8rem;
+  right: 20%;
+  bottom: 15rem;
+  color:   #B5B5B5;
+  font-size: 1.5rem;
+}
+.quote {
+  right: -5%;
 }
 
 .right-side-content-items{
@@ -27,10 +37,10 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 90%;
-  top: 20rem;
-  color: #E0A96D;
-  font-size: 1.8rem;
+  left: 20%;
+  top: 25rem;
+  color:  #B5B5B5;
+  font-size: 1.5rem;
 }
 
 .logo-container {

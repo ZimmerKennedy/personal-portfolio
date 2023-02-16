@@ -10,11 +10,13 @@ function Home() {
           <div className="left-side-content-items">
             I've just found 10,000 ways that won't work.
           </div>
-          <div className="left-side-content-items">-Thomas Edison</div>
+          <div className="left-side-content-items quote">-Thomas Edison</div>
+        </div>
+        <div className="middle-contents">
+          <div className="middle-content-items font3">Zimmer Kennedy</div>
+          <div className="middle-content-items font3">Full-Stack Developer</div>
         </div>
         <div className="right-side-contents">
-          <div className="right-side-content-items">Zimmer Kennedy</div>
-          <div className="right-side-content-items">Full Stack Developer</div>
           <div className="right-side-content-items">
             Creating Solutions, One Code at a Time
           </div>
