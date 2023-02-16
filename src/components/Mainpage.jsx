@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./home.css";
 import About from "./About";
 import Home from "./Home";
 import Navbar from "./Navbar";
-import { animateScroll as scroll } from 'react-scroll';
-import './Mainpage.css';
+import "./Mainpage.css";
+import Projects from "./Projects";
+
 const Mainpage = () => {
-
-
   return (
-    
-    <>
+    <div className="container">
       <Navbar />
       <div id="section1" className="section">
         <Home />
@@ -19,11 +17,10 @@ const Mainpage = () => {
         <About />
       </div>
       <div id="section3" className="section">
-        {/* section 3 content */}
+        <Projects />
       </div>
-    </>       
+    </div>
   );
-}
+};
 
 export default Mainpage;
-
