@@ -14,7 +14,7 @@
 }
 
 .left-side-navbar-items {
-  padding: 1rem;
+  padding: 0.8rem;
   color: #FBEEC1;
 }
 
@@ -35,7 +35,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   .right-side-navbar {
     display: none;
   }
@@ -45,6 +45,11 @@
     font-size: 2rem;
     color: white;
     padding-right: 2rem;
+  }
+  .left-side-navbar-items:hover {
+    font-weight: normal;
+    cursor: auto;
+    font-size: inherit;
   }
 
   .show {
@@ -68,6 +73,49 @@
   }
   
   .left-side-navbar-items {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
 }
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .right-side-navbar {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    padding-right: 2rem;
+  }
+  .left-side-navbar-items:hover {
+    font-weight: normal;
+    cursor: auto;
+    font-size: inherit;
+  }
+
+  .show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 3.6rem;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    z-index: 5;
+    transition: 0.5s ease;
+  }
+
+  .right-side-navbar-items {
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  
+  .left-side-navbar-items {
+    font-size: 0.6em;
+  }
+}
+

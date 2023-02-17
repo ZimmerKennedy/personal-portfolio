@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
-
+import codingGif from "../../../public/codingGIF.gif"
 function Home() {
   const [wordIndex, setWordIndex] = useState(0);
-  const words = ["Software Engineer","Full-Stack Developer", "Web App Developer", "Front-End Developer", ,"Back-End Developer"];
+  const words = ["Software Engineer","Full-Stack Developer", "Web App Developer", "Front-End Developer","Back-End Developer"];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -33,17 +33,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="pernLogo">
-        <div className="logo-container">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M25,0 L100,100 L75,175 L0,75 Z"
-              stroke="#ffffff"
-              strokeWidth="10"
-              fill="none"
-            />
-          </svg>
-        </div>
+      <div className="logo">  
+          <img src={codingGif}alt="example GIF"  />       
       </div>
     </div>
   );
