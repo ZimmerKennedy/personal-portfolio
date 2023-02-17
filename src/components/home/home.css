@@ -56,6 +56,22 @@
 }
 
 
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  visibility: visible;
+  overflow: hidden;
+}
+
+.logo-container svg path {
+  stroke-dasharray: 629.2;
+  stroke-dashoffset: 629.2;
+  animation: fillScreen 2s forwards;
+}
 
 @media only screen and (max-width: 576px) {
   .middle-contents {
@@ -94,51 +110,43 @@
   }
   
   .left-side-content-items {
-    flex-direction: row;
-    bottom: 10;
-    gap: rem;
-    margin-left: 5rem;
+    bottom: 13rem;
+    font-size: 1.2rem;
+    gap: 2rem;
+    left: 0;
   }
   
   .right-side-content-items {
     top: 20rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     gap: 2rem;
-    flex-direction: row;
     left: 0;
   }
 }
 
-.logo-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  visibility: visible;
-  overflow: hidden;
-}
 
-.logo-container svg path {
-  stroke-dasharray: 629.2;
-  stroke-dashoffset: 629.2;
-  animation: fillScreen 2s forwards;
-}
-
-@keyframes fillScreen {
-  0% {
-    stroke-dashoffset: 629.2;
+@media only screen and (min-width:769px) and (max-width: 1900px){
+  .middle-contents {
+    position: absolute;
+    font-size: 4rem;
+    width: 40rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
   }
-  100% {
-    stroke-dashoffset: 0;
+  
+  .left-side-content-items {
+    bottom: 13rem;
+    font-size: 2rem;
+    gap: 2rem;
+    left: 0;
+  }
+  
+  .right-side-content-items {
+    top: 20rem;
+    font-size: 2rem;
+    gap: 2rem;
+    left: 0;
   }
 }
-
-.fill-screen {
-  stroke-dashoffset: 0;
-}
-.pernLogo {
-  opacity: 0.4;
-  pointer-events: none;
-} 
+  

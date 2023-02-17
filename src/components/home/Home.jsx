@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
-import codingGif from "../../../public/codingGIF.gif"
+import codingGif from "../../codingGIF.gif"
 function Home() {
   const [wordIndex, setWordIndex] = useState(0);
   const words = ["Software Engineer","Full-Stack Developer", "Web App Developer", "Front-End Developer","Back-End Developer"];
