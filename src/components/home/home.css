@@ -1,152 +1,117 @@
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
 .contents {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
-.middle-contents{
+
+.left-side-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: black;
+}
+
+
+.left-side-content-items {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  color: white;
-  z-index: 2;
-  width: 55rem;
-  height: 15rem;
+  font-size: 1.5rem;
+  color:   #B5B5B5;
 }
-.left-side-content-items {
+.left-side-content-wrapper {
+  position: relative;
+  bottom: 20rem; 
+}
+
+
+.middle-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  right: 20%;
-  bottom: 15rem;
-  color:   #B5B5B5;
-  font-size: 1.5rem;
+  flex: 2;
+  background-color: black;
 }
-.quote {
-  right: -5%;
+
+.middle-content-items{
+  color: white;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.right-side-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: black;
 }
 
 .right-side-content-items{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  font-size: 2rem;
+  color:   #B5B5B5;
+}
+
+.right-side-content-wrapper {
   position: relative;
-  left: 20%;
-  top: 30rem;
-  color:  #B5B5B5;
-  font-size: 1.5rem;
+  top: 20rem; 
 }
 
 .logo {
   position: absolute;
-  right: 25;
-  left: 25;
   bottom: 0;
-  opacity: 0.4;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.3;
   pointer-events: none;
+  object-fit: contain;
 }
 
-
-.logo-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  visibility: visible;
-  overflow: hidden;
-}
-
-.logo-container svg path {
-  stroke-dasharray: 629.2;
-  stroke-dashoffset: 629.2;
-  animation: fillScreen 2s forwards;
-}
-
-@media only screen and (max-width: 576px) {
-  .middle-contents {
-    position: absolute;
-    font-size: 2rem;
-    width: 40rem;
-    height: 10rem;
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 576px){
+  .left-side-content-items{
+    font-size: 0.5rem;
+    margin-left: 1rem;
   }
-  
-  .left-side-content-items {
-    bottom: 13rem;
+  .right-side-content-items{
+    font-size: 0.5rem;
+  }
+  .right-side-content-wrapper {
+    top: 15rem; 
+  }
+  .left-side-content-wrapper {
+    bottom: 15rem; 
+  }
+  .middle-content-items{
     font-size: 1rem;
-    gap: 2rem;
-    left: 0;
-  }
-  
-  .right-side-content-items {
-    top: 20rem;
-    font-size: 1rem;
-    gap: 2rem;
-    left: 0;
-  }
-}
-
-
-@media only screen and (min-width: 577px) and (max-width: 768px){
-  .middle-contents {
-    position: absolute;
-    font-size: 2rem;
-    width: 40rem;
-    height: 10rem;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .left-side-content-items {
-    bottom: 13rem;
-    font-size: 1.2rem;
-    gap: 2rem;
-    left: 0;
-  }
-  
-  .right-side-content-items {
-    top: 20rem;
-    font-size: 1.2rem;
-    gap: 2rem;
-    left: 0;
   }
 }
 
 
 @media only screen and (min-width:769px) and (max-width: 1900px){
-  .middle-contents {
-    position: absolute;
-    font-size: 4rem;
-    width: 40rem;
-    height: 10rem;
-    justify-content: center;
-    align-items: center;
+    .left-side-content-items{
+    font-size: 1rem;
+    margin-left: 1rem;
   }
-  
-  .left-side-content-items {
-    bottom: 13rem;
-    font-size: 2rem;
-    gap: 2rem;
-    left: 0;
+  .right-side-content-items{
+    font-size: 1rem;
   }
-  
-  .right-side-content-items {
-    top: 20rem;
-    font-size: 2rem;
-    gap: 2rem;
-    left: 0;
+  .right-side-content-wrapper {
+    top: 25rem; 
   }
-}
-  
+  .left-side-content-wrapper {
+    bottom: 25rem; 
+  }
+  .middle-content-items{
+    font-size: 2.4rem;
+  }
+}  

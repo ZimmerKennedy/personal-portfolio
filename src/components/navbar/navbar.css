@@ -77,7 +77,7 @@
   }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 900px) {
   .right-side-navbar {
     display: none;
   }
@@ -116,7 +116,9 @@
   }
   
   .left-side-navbar-items {
-    font-size: 0.6em;
+    font-size: 1em;
   }
 }
+
+
 
