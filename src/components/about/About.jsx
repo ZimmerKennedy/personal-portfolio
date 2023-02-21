@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./About.css";
+import "./about.css";
 import zimmerProfile from "../../../public/zimmerProfile.png";
 const About = () => {
   const [activeCategory, setActiveCategory] = useState("frontend");

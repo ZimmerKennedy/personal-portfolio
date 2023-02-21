@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import About from "../about/About";
 import Home from "../home/Home";
 import Navbar from "../navbar/Navbar"
-import "./Mainpage.css";
+import "./mainpage.css";
 import Projects from "../projects/Projects";
 const Mainpage = () => {
   return ( 

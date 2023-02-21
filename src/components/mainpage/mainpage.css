@@ -12,14 +12,9 @@
   height: 100vh;
   scroll-snap-align: start;
 }
-#section1 {
-    background-color: #0e141b;
-  } 
-  /* #section2 {
-    background-color: #E0A96D;
-  }  */
-   #section3 {
-    background-color: red;
-  }
+
+#section1{
+  background-color: black;
+}
 
 
