@@ -55,23 +55,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
 }
-
+#right-section-contents-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    
+}
 .right-section-contents {
     color: white;
-    margin-bottom: 40rem;
-    padding-right: 1.5rem;
-    
+    padding-right: 2rem;
+    margin-right: 1rem;
     font-size: 2rem;
-    border-bottom: 1px solid #ff5277;
     border-right: 3px solid #ff5277;
+    border-bottom: 1px solid #ff5277;
+    justify-content: space-between;
+    display: block;
 }
+
 /*  this is cool */
 .right-section-contents:hover{
     border-style: solid #ff5277;
     border-width: 3px 1px;
+    cursor: pointer;
+}
+
+#right-section-render-contents-wrapper{
+    height: 50%;
 }
 
 /* .right-section-contents:hover {
@@ -94,3 +106,73 @@
     opacity: 1;
   }
 
+
+    #render-images-container{
+    color: white;
+    flex:3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#backend-contents{
+    color: white;
+}
+#misc-contents{
+    color: white;
+}
+
+.frontend-images{
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    padding: 1rem;
+    margin-left: 2.5rem;
+    border-bottom: 1px solid #ff5277;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.8;
+}
+.frontend-images:last-child{
+    margin: 5rem 14.5rem;
+}
+
+.frontend-images:hover{
+    opacity: 1;
+    border-bottom: 2.5px solid #ff5277;
+}
+
+
+.backend-images{
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    padding: 1rem;
+    margin-left: 2.5rem;
+    border-bottom: 1px solid #ff5277;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+.backend-images:hover{
+    opacity: 1;
+    border-bottom: 2.5px solid #ff5277;
+}
+
+.misc-images{
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    padding: 1rem;
+    margin-left: 2.5rem;
+    border-bottom: 1px solid #ff5277;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+.misc-images:hover{
+    opacity: 1;
+    border-bottom: 2.5px solid #ff5277;
+}
+.misc-images:last-child{
+    margin-left: 14.5rem;
+}
