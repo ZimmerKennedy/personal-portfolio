@@ -1,4 +1,4 @@
-.about-container{
+#about-container{
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -6,8 +6,41 @@
     align-items: center;
 }
 
-.left-section-about{
-    background-color: aliceblue;
+#left-section-about{
+    background-color: black;
+    flex: 1.5;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name-tag{
+    margin-right: 10rem;
+    padding-bottom: 4rem;
+    font-size: 3rem;
+    color:white
+}
+
+.left-section-contents{
+    margin-bottom: 1rem;
+    display: flex;
+    color: #B5B5B5;
+    font-size: 1.5rem;
+    margin: 0 5rem;
+    line-height: 2.5rem;
+    padding-bottom: 0.5rem 0;
+    border-bottom: 1px solid #ff5277;
+}
+
+.left-section-contents:hover{
+    color: white;
+    border-bottom: 3px solid #ff5277;
+}
+
+#middle-section-about{
+    background-color:black;
     flex: 2;
     height: 100%;
     display: flex;
@@ -15,20 +48,49 @@
     align-items: center;
 }
 
-.middle-section-about{
-    background-color:gainsboro;
-    flex: 1;
+#right-section-about{
+    background-color:black;
     height: 100%;
+    flex: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.right-section-about{
-    background-color:gray;
-    height: 100%;
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.right-section-contents {
+    color: white;
+    margin-bottom: 40rem;
+    padding-right: 1.5rem;
+    
+    font-size: 2rem;
+    border-bottom: 1px solid #ff5277;
+    border-right: 3px solid #ff5277;
 }
+/*  this is cool */
+.right-section-contents:hover{
+    border-style: solid #ff5277;
+    border-width: 3px 1px;
+}
+
+/* .right-section-contents:hover {
+    border: 1px solid #ff5277;
+    border-width: 1px 3px;
+    padding-left: 1.5rem;
+    cursor: pointer;
+} */
+
+#profileLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.5;
+    
+  }
+  
+  #profileLogo:hover {
+    opacity: 1;
+  }
+

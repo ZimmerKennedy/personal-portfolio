@@ -28,9 +28,9 @@ const Navbar = () => {
 
         {/* Render navbar items on large screens */}
         <div className={`right-side-navbar ${toggleNavbar ? "show" : ""}`}>
-          <span className="right-side-navbar-items">About</span>
-          <span className="right-side-navbar-items">Projects</span>
-          <span className="right-side-navbar-items">Contact</span>
+          <span className="right-side-navbar-items font3">About</span>
+          <span className="right-side-navbar-items font3">Projects</span>
+          <span className="right-side-navbar-items font3">Contact</span>
         </div>
       </div>
     </nav>

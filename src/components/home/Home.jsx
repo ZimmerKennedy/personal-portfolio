@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
-import codingGif from "../../codingGIF.gif"
+import codingGif from "../../codingGIF.gif";
 function Home() {
   const [wordIndex, setWordIndex] = useState(0);
-  const words = ["Software Engineer","Full-Stack Developer", "Web App Developer", "Front-End Developer","Back-End Developer"];
+  const words = [
+    "Software Engineer",
+    "Full-Stack Developer",
+    "Web App Developer",
+    "Front-End Developer",
+    "Back-End Developer",
+  ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -15,31 +21,27 @@ function Home() {
 
   return (
     <>
-      <div className="contents">
-        <div className="left-side-container">
-            <div class="left-side-content-wrapper">
-          <div className="left-side-content-items">I Have not failed.</div>
-          <div className="left-side-content-items">
-            I've just found 10,000 ways that won't work.
-          </div>
-          <div className="left-side-content-items">-Thomas Edison</div>
+      <div id="home-container">
+        <div id="left-side-container">
+          <div class="left-side-content-wrapper">
+            <div className="left-side-content-items font3">I Have not failed.</div>
+            <div className="left-side-content-items font3">
+              I've just found 10,000 ways that won't work.
+            </div>
+            <div className="left-side-content-items">-Thomas Edison</div>
           </div>
         </div>
-        <div className="middle-container">
+        <div id="middle-container">
           <div className="middle-content-items font3">Zimmer Kennedy</div>
           <div className="middle-content-items font3">{words[wordIndex]}</div>
-          <div className="logo">  
-          <img src={codingGif}alt="example GIF"  />       
-      </div>
+          <div className="logo">
+            <img src={codingGif} alt="example GIF" />
+          </div>
         </div>
-        <div className="right-side-container">
-        <div class="right-side-content-wrapper">
-          <div className="right-side-content-items">
-            Creating Solutions
-          </div>
-          <div className="right-side-content-items">
-            One Code at a Time
-          </div>
+        <div id="right-side-container">
+          <div class="right-side-content-wrapper">
+            <div className="right-side-content-items font3">Creating Solutions</div>
+            <div className="right-side-content-items font3">One Code at a Time</div>
           </div>
         </div>
       </div>

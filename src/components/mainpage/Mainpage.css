@@ -1,3 +1,7 @@
+.container::-webkit-scrollbar {
+  display: none;
+}
+
 .container{
     height: 100vh;
     scroll-snap-type: y mandatory;
@@ -6,10 +10,10 @@
 
 .section {
   height: 100vh;
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
 }
 #section1 {
-    background-color: #0C0C0C;
+    background-color: #0e141b;
   } 
   /* #section2 {
     background-color: #E0A96D;
