@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./about.css";
-import zimmerProfile from "../../../public/zimmerProfile.png";
 const About = () => {
   const [activeCategory, setActiveCategory] = useState("frontend");
 
@@ -28,7 +27,7 @@ const About = () => {
         </div>
       </section>
       <section id="middle-section-about">
-        <img id="profileLogo" draggable="false" src={zimmerProfile} alt="profilePicZimmer" />
+        <img id="profileLogo" draggable="false" src="/zimmerProfile.png"alt="profilePicZimmer" />
       </section>
       <section id="right-section-about">
         <div id="right-section-contents-wrapper">

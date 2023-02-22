@@ -1,5 +1,5 @@
 #projects-wrapper{
-    background-color: burlywood;
+    background-color: black;
     height: 100vh;
     position: relative;
 }
@@ -10,10 +10,12 @@
     flex-direction: column;
 }
 .title-section{
-    margin-top: 5rem;
+    margin-top: 4rem;
+    font-size: 3rem;
+    color: white;
 }
 .projects-section-wrapper{
-    margin-top: 6.5rem;
+    margin-top: 5rem;
 }
 
 .right-section-projects{
@@ -29,42 +31,175 @@
 
 
 .project2-section{
-    background-color: blue;
     height: 20rem;
+    position: static;
+    z-index: 1;
+    box-shadow: 0 0 10px 5px #ff5277;
 }
 .project4-section{
     margin-top: 3rem;
-    background-color: red;
     height: 20rem;
+    position: static;
+    z-index: 1;
+    box-shadow: 0 0 10px 5px #ff5277;
 }
 
-.project1-section{
-    height:25rem;
-    background-color: gray;
-    margin-top: 3rem;
-}
+.project1-section {
+    height: 20rem;
+    position: static;
+    z-index: 1;
+    box-shadow: 0 0 10px 5px #ff5277;
+  }
+  
 
 .project3-section{
-    height:17rem;
-    margin-top: 3rem;
-    background-color: aqua;
+    height: 20rem;
+    margin-top: 3rem; 
+    position: static;
+    z-index: 1;
+    box-shadow: 0 0 10px 5px #ff5277;
 }
 
-.border-middle-projects {
+.projects-title-left, .projects-title-right{
+    font-size: 1.5rem;
+}
+
+
+.project1-section:hover{
+    position: static;
+    z-index: 1;
+    box-shadow: 0 0 10px 5px white;
+}
+.project2-section:hover{
+    position: static;
+    z-index: 1;
+    box-shadow: 0 0 10px 5px white;
+}
+.project3-section:hover{
+    position: static;
+    z-index: 1;
+    box-shadow: 0 0 10px 5px white;
+}
+.project4-section:hover{
+    position: static;
+    z-index: 1;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.project1-section:hover .projects-title-left {
+    color: white;
+  }
+  .project3-section:hover .projects-title-left {
+    color: white;
+  }
+  .project2-section:hover .projects-title-right {
+    color: white;
+  }
+  .project4-section:hover .projects-title-right {
+    color: white;
+  }
+
+.project1-section:hover .border-projects-arti .line-arti {
+    stroke: #ff5277;
+    stroke-width: 3;
+    
+  }
+  .project1-section:hover .border-middle-projects-arti .line-arti{
+    stroke: #ff5277;
+    stroke-width: 3;
+  }
+  .project3-section:hover .border-projects-openShop .line-openShop {
+      stroke: #ff5277;
+      stroke-width: 3;
+    }
+    .project3-section:hover .border-middle-projects-openShop .line-openShop{
+      stroke: #ff5277;
+
+      stroke-width: 3;
+    }
+
+    .project2-section:hover .border-projects-pangea .line-pangea {
+        stroke: #ff5277;
+        stroke-width: 3;
+      }
+      .project2-section:hover .border-middle-projects-pangea .line-pangea{
+        stroke: #ff5277;
+
+        stroke-width: 3;
+      }
+      .project4-section:hover .border-projects-youNo .line-youNo {
+        stroke: #ff5277;
+        stroke-width: 3;
+      }
+      .project4-section:hover .border-middle-projects-youNo .line-youNo{
+        stroke: #ff5277;
+        stroke-width: 3;
+      }
+
+  .border-middle-projects-arti,
+  .border-middle-projects-pangea {
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translateX(-50%);
-    height: 100%;
+    height: 22.9%;
+    z-index: 1;
   }
 
-.border-projects1{
+  .border-middle-projects-openShop,
+  .border-middle-projects-youNo {
     position: absolute;
     top: 15%;
     left: 50%;
-    width: 30rem;
+    transform: translateX(-50%);
+    height: 57.9%;
+  }
+
+
+
+
+
+
+.border-projects-arti{
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    width: 15.5rem;
 }
+.border-projects-youNo{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 15.5rem;
+}
+.border-projects-pangea{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 15.5rem;
+}
+.border-projects-openShop{
+    position: absolute;
+    top: 65%;
+    right: 50%;
+    width: 15.5rem;
+}
+
+
   
 .projects-section-wrapper{
     display: flex;
+}
+
+.projects-img{
+    width: 100%;
+    height: 100%;
+}
+
+.projects-title-left{
+    margin-left: 30%;
+}
+
+.projects-title-right{
+    margin-left: 35%;
 }
