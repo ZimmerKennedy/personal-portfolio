@@ -23,7 +23,7 @@ function Home() {
     <>
       <div id="home-container">
         <div id="left-side-container">
-          <div class="left-side-content-wrapper">
+          <div className="left-side-content-wrapper">
             <div className="left-side-content-items font3">I Have not failed.</div>
             <div className="left-side-content-items font3">
               I've just found 10,000 ways that won't work.
@@ -39,7 +39,7 @@ function Home() {
           </div>
         </div>
         <div id="right-side-container">
-          <div class="right-side-content-wrapper">
+          <div className="right-side-content-wrapper">
             <div className="right-side-content-items font3">Creating Solutions</div>
             <div className="right-side-content-items font3">One Code at a Time</div>
           </div>

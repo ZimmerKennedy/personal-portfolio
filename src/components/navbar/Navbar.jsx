@@ -9,13 +9,17 @@ const Navbar = () => {
     setToggleNavbar(!toggleNavbar);
   };
 
+  const handleNavItemClick = (sectionId) => {
+    setToggleNavbar(false);
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <nav>
       <div className="navbar">
         <div className="left-side-navbar">
-          <span className="left-side-navbar-items font3">
-            ZIMMER KENNEDY
-          </span>
+          <span className="left-side-navbar-items font3">ZIMMER KENNEDY</span>
           <span className="left-side-navbar-items font3">
             FULL STACK DEVELOPER
           </span>
@@ -28,9 +32,9 @@ const Navbar = () => {
 
         {/* Render navbar items on large screens */}
         <div className={`right-side-navbar ${toggleNavbar ? "show" : ""}`}>
-          <span className="right-side-navbar-items font3">About</span>
-          <span className="right-side-navbar-items font3">Projects</span>
-          <span className="right-side-navbar-items font3">Contact</span>
+          <span className="right-side-navbar-items font3" onClick={() => handleNavItemClick("section1")}>Home</span>
+          <span className="right-side-navbar-items font3" onClick={() => handleNavItemClick("section2")}>About</span>
+          <span className="right-side-navbar-items font3" onClick={() => handleNavItemClick("section3")}>Projects</span>
         </div>
       </div>
     </nav>

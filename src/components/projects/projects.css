@@ -11,9 +11,10 @@
 }
 .title-section{
     margin-top: 4rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: white;
 }
+
 .projects-section-wrapper{
     margin-top: 5rem;
 }
@@ -28,6 +29,7 @@
     margin-right: 30rem;
     width: 40rem;
 }
+
 
 
 .project2-section{
@@ -62,6 +64,45 @@
 
 .projects-title-left, .projects-title-right{
     font-size: 1.5rem;
+}
+
+.projects-techstack-arti-images,
+.projects-techstack-openShop-images,
+.projects-techstack-pangea-images,
+.projects-techstack-youNo-images{
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+.projects-techstack-arti{
+    position: absolute;
+    color: white;
+    top: 33%;
+    right: 50%;
+    display: flex;
+}
+.projects-techstack-pangea{
+  position: absolute;
+    color: white;
+    top: 33%;
+    left: 50%;
+    display: flex;
+}
+
+.projects-techstack-openShop{
+  position: absolute;
+    color: white;
+    top: 68.5%;
+    right: 50%;
+    display: flex;
+}
+.projects-techstack-youNo{
+  position: absolute;
+    color: white;
+    top: 68.5%;
+    left: 50%;
+    display: flex;
 }
 
 
