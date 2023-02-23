@@ -196,11 +196,6 @@
     height: 57.9%;
   }
 
-
-
-
-
-
 .border-projects-arti{
     position: absolute;
     top: 30%;
@@ -244,3 +239,47 @@
 .projects-title-right{
     margin-left: 35%;
 }
+
+.github-project-arti{
+  position: absolute;
+  width: 5rem;
+  height: 2rem;
+  object-fit: contain;
+  top: 22%;
+  right: 59.5%;
+  cursor: pointer;
+}
+.github-project-pangea{
+  position: absolute;
+  width: 5rem;
+  height: 2rem;
+  object-fit: contain;
+  top: 22%;
+  left: 59.5%;
+  cursor: pointer;
+}
+.github-project-openShop{
+  position: absolute;
+  width: 5rem;
+  height: 2rem;
+  object-fit: contain;
+  top: 60%;
+  right: 59.5%;
+  cursor: pointer;
+}
+.github-project-youNo{
+  position: absolute;
+  width: 5rem;
+  height: 2rem;
+  object-fit: contain;
+  top: 60%;
+  left: 59.5%;
+  cursor: pointer;
+}
+/* .github-project-arti:hover,
+.github-project-openShop:hover,
+.github-project-pangea:hover,
+.github-project-youNo:hover{
+ border: 2px solid #ff5277;
+ cursor: pointer;
+} */

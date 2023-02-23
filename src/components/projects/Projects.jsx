@@ -47,7 +47,18 @@ const Projects = () => {
               <div className="projects-title-left">
                 Arti The Chatbot - ChatGPT Clone
               </div>
+              <a
+                href="https://github.com/ZimmerKennedy/ai_chatbot_stackathon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
 
+              <img
+                className="github-project-arti"
+                src="/miscImg/githubLogo.png"
+                alt="Github"
+                />
+                </a>
               <img
                 className="projects-img"
                 src="/projectsImg/artiProject.png"
@@ -112,6 +123,18 @@ const Projects = () => {
               <div className="projects-title-left">
                 Open Shop - ECommerce Platform
               </div>
+              <a
+                href="https://github.com/Grace-Shopper-Senior-Phase/OpenShop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+
+              <img
+                className="github-project-openShop"
+                src="/miscImg/githubLogo.png"
+                alt="Github"
+                />
+                </a>
               <img
                 className="projects-img"
                 src="/projectsImg/openShopProject.png"
@@ -185,6 +208,18 @@ const Projects = () => {
               <div className="projects-title-right">
                 Pangea - Landlord/Tenant App
               </div>
+              <a
+                href="https://github.com/Pangea-Capstone-Project/Pangea"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+
+              <img
+                className="github-project-pangea"
+                src="/miscImg/githubLogo.png"
+                alt="Github"
+                />
+                </a>
               <img
                 className="projects-img"
                 src="/projectsImg/pangeaProject.png"
@@ -242,7 +277,6 @@ const Projects = () => {
                   />
                 </svg>
               </div>
-
               <div className="border-projects-youNo">
                 <svg width="100%" height="100%">
                   <line
@@ -257,6 +291,17 @@ const Projects = () => {
               <div className="projects-title-right">
                 YouNo - A Youtube Clone
               </div>
+              <a
+                href="https://github.com/ZimmerKennedy/youtube_clone_app_react"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="github-project-youNo"
+                  src="/miscImg/githubLogo.png"
+                  alt="Github"
+                />
+              </a>
               <img
                 className="projects-img"
                 src="/projectsImg/youNoProject.png"
@@ -269,7 +314,7 @@ const Projects = () => {
                     src="/frontendImg/reactLogo.png"
                     alt="reactLogo"
                   />
-                  </div>
+                </div>
               )}
             </section>
           </div>
