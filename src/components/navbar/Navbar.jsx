@@ -19,8 +19,8 @@ const Navbar = () => {
     <nav>
       <div className="navbar">
         <div className="left-side-navbar">
-          <span className="left-side-navbar-items font3">ZIMMER KENNEDY</span>
-          <span className="left-side-navbar-items font3">
+          <span className="left-side-navbar-items font3"  onClick={() => handleNavItemClick("section1")}>ZIMMER KENNEDY</span>
+          <span className="left-side-navbar-items font3"  onClick={() => handleNavItemClick("section2")}>
             FULL STACK DEVELOPER
           </span>
         </div>
@@ -35,6 +35,7 @@ const Navbar = () => {
           <span className="right-side-navbar-items font3" onClick={() => handleNavItemClick("section1")}>Home</span>
           <span className="right-side-navbar-items font3" onClick={() => handleNavItemClick("section2")}>About</span>
           <span className="right-side-navbar-items font3" onClick={() => handleNavItemClick("section3")}>Projects</span>
+          <span className="right-side-navbar-items font3" onClick={() => handleNavItemClick("section4")}>Contact</span>
         </div>
       </div>
     </nav>

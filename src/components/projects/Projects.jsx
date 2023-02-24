@@ -52,13 +52,12 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-
-              <img
-                className="github-project-arti"
-                src="/miscImg/githubLogo.png"
-                alt="Github"
+                <img
+                  className="github-project-arti"
+                  src="/miscImg/githubLogo.png"
+                  alt="Github"
                 />
-                </a>
+              </a>
               <img
                 className="projects-img"
                 src="/projectsImg/artiProject.png"
@@ -128,13 +127,12 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-
-              <img
-                className="github-project-openShop"
-                src="/miscImg/githubLogo.png"
-                alt="Github"
+                <img
+                  className="github-project-openShop"
+                  src="/miscImg/githubLogo.png"
+                  alt="Github"
                 />
-                </a>
+              </a>
               <img
                 className="projects-img"
                 src="/projectsImg/openShopProject.png"
@@ -213,13 +211,12 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-
-              <img
-                className="github-project-pangea"
-                src="/miscImg/githubLogo.png"
-                alt="Github"
+                <img
+                  className="github-project-pangea"
+                  src="/miscImg/githubLogo.png"
+                  alt="Github"
                 />
-                </a>
+              </a>
               <img
                 className="projects-img"
                 src="/projectsImg/pangeaProject.png"

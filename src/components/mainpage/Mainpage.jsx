@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import About from "../about/About";
 import Home from "../home/Home";
-import Navbar from "../navbar/Navbar"
 import "./mainpage.css";
 import Projects from "../projects/Projects";
+import Contact from "../contactPage/Contact";
 const Mainpage = () => {
   return ( 
 <div className="container">
@@ -17,6 +17,9 @@ const Mainpage = () => {
 
   <div id="section3" className="section" name="section3">
     <Projects />
+  </div>
+  <div id="section4" className="section" name="section4">
+    <Contact />
   </div>
 </div> 
   );
