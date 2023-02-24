@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="navbar">
+      <div id="navbar-container">
         <div className="left-side-navbar">
           <span className="left-side-navbar-items font3"  onClick={() => handleNavItemClick("section1")}>ZIMMER KENNEDY</span>
           <span className="left-side-navbar-items font3"  onClick={() => handleNavItemClick("section2")}>

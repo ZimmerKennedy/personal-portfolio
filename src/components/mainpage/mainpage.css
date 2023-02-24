@@ -2,10 +2,12 @@
   display: none;
 }
 
-.container{
+
+#mainpage-container{
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .section {
@@ -13,8 +15,8 @@
   scroll-snap-align: start;
 }
 
-/* #section1{
+#section1{
   background-color: black;
-} */
+}
 
 

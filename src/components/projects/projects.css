@@ -1,9 +1,9 @@
-#projects-wrapper{
+#projects-container{
     background-color: black;
     height: 100vh;
     position: relative;
 }
-.projects-container{
+.projects-wrapper{
     height: 100%;
     display: flex;
     align-items: center;

@@ -6,7 +6,7 @@ import Projects from "../projects/Projects";
 import Contact from "../contactPage/Contact";
 const Mainpage = () => {
   return ( 
-<div className="container">
+<div id="mainpage-container">
   <div id="section1" className="section" name="section1">
     <Home />
   </div>

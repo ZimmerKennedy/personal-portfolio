@@ -6,8 +6,8 @@ const Projects = () => {
   const [isOpenShopHovered, setIsOpenShopHovered] = useState(false);
   const [isYouNoHovered, setIsYouNoHovered] = useState(false);
   return (
-    <div id="projects-wrapper">
-      <div className="projects-container">
+    <div id="projects-container">
+      <div className="projects-wrapper">
         <section className="title-section">Projects</section>
         <div className="projects-section-wrapper">
           <div className="left-section-projects">
