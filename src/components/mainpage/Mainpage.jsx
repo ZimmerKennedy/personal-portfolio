@@ -3,7 +3,7 @@ import About from "../about/About";
 import Home from "../home/Home";
 import "./mainpage.css";
 import Projects from "../projects/Projects";
-import Contact from "../contactPage/Contact";
+import Contact from "../contact/Contact";
 const Mainpage = () => {
   return ( 
 <div id="mainpage-container">

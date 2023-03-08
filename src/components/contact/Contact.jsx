@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.css";
-import resumeZimmer from "/public/resumeZimmer.pdf";
+import resumeZimmer from "/resumeZimmer.pdf";
 const Contact = () => {
     
     function downloadResume() {
@@ -12,16 +12,23 @@ const Contact = () => {
         document.body.removeChild(link);
       }
 
+      function sendEmail() {
+        window.location.href = "mailto:kennedyzimmer00@gmail.com"
+      }
+
   return (
     <div id="contact-container">
-      <div className="contact-wrapper">
-        <section className="top-section-contact">
+      <div id="contact-wrapper">
+        <section id="top-section-contact">
           I'm excited to bring my skills and experience to your project and help
           bring your vision to life through clean, efficient, and effective
           code.
           <div>Let's work together to build something great!</div>
         </section>
-        <section className="middle-section-contact">
+        <div id="get-in-touch">
+          Get in Touch
+        </div>
+        <section id="middle-section-contact">
             <a href="https://www.linkedin.com/in/zimmerkennedy/" target="_blank">
             <img className="contact-image" src="/miscImg/linkedInLogo.png" alt="linkedIn"/>
             </a>
@@ -31,7 +38,11 @@ const Contact = () => {
             <img className="contact-image" src="/miscImg/resumeLogo.png" alt="resume" onClick={downloadResume}/>
 
         </section>
-        <section className="bottom-section-contact">There</section>
+        <section id="bottom-section-contact">
+          <div id="contact-me" onClick={sendEmail}>
+          Contact Me
+          </div>
+        </section>
       </div>
     </div>
   );
