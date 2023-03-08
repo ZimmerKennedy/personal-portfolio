@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import resumeZimmer from "/resumeZimmer.pdf";
 const Contact = () => {
-    
+    const [showImage, setShowImage] = useState(false); 
+    const handleClick = () => {
+      setShowImage(true);
+    };
+  
+    const handleClose = () => {
+      setShowImage(false);
+    };
+
     function downloadResume() {
         const link = document.createElement('a');
         link.href = resumeZimmer;
@@ -35,8 +43,33 @@ const Contact = () => {
             <a href="https://github.com/ZimmerKennedy" target="_blank">
             <img className="contact-image" src="/miscImg/githubLogo.png" alt="github"/>
             </a>
-            <img className="contact-image" src="/miscImg/resumeLogo.png" alt="resume" onClick={downloadResume}/>
-
+            {/* <img className="contact-image" src="/miscImg/resumeLogo.png" alt="resume" onClick={downloadResume}/> */}
+            <img
+        className="contact-image"
+        src="/miscImg/resumeLogo.png"
+        alt="resume"
+        onClick={handleClick}
+      />
+      {showImage && (
+  <div className="resume-preview">
+    <div className="preview-content">
+      <div className="close-icon" onClick={handleClose}>
+        Exit
+      </div>
+      <div className="download-icon" onClick={downloadResume}>
+        Download
+      </div>
+      <img
+        src="/resumeFirstPage.png"
+        alt="resume preview"
+      />
+      <img
+        src="/resume2ndPage.png"
+        alt="resume preview"
+      />
+    </div>
+  </div>
+)}
         </section>
         <section id="bottom-section-contact">
           <div id="contact-me" onClick={sendEmail}>
