@@ -20,4 +20,11 @@
   background-color: #111;
 }
 
+@media only screen and (max-width: 1300px){
+  #mainpage-container {
+    scroll-snap-type: initial;
+  }
+}
+
+
 

@@ -170,3 +170,84 @@
 .misc-images:last-child{
     margin-left: 14.5rem;
 }
+
+
+
+@media only screen and (max-width: 768px){
+    #about-container{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+       } 
+       .left-section-contents{
+        font-size: 0.5rem;
+        margin: 0 0.5rem;
+       }
+       .name-tag{
+        font-size: 1rem;
+        margin: 0;
+       }
+       #middle-section-about{
+        height: 15rem;
+       }
+       #profileLogo{
+        height: 10rem;
+       }
+       #right-section-about{
+        height: 2rem;
+       }
+       .right-section-contents{
+        font-size: 1rem;
+       }
+       .frontend-images, .backend-images,.misc-images{
+        height: 2rem;
+        width: 1rem;
+        object-fit: contain;
+       }
+       .misc-images:last-child{
+        margin-left: 2.5em; 
+    }
+        .frontend-images:last-child{
+            margin: 0 2.5rem;
+        }
+}
+
+
+@media only screen and (min-width:769px) and (max-width: 1350px){
+    #about-container{
+        display: flex;
+        flex-direction: column;
+       } 
+       .left-section-contents{
+        font-size: 1rem;
+       }
+       .name-tag{
+        font-size: 2rem;
+       }
+       #middle-section-about{
+        height: 10rem;
+       }
+       #right-section-about{
+        height: 10rem;
+       }
+       .frontend-images, .backend-images,.misc-images{
+        height: 2rem;
+        width: 5rem;
+        object-fit: contain;
+       }
+       .misc-images:last-child{
+        margin-left: 2.5em; 
+    }
+        .frontend-images:last-child{
+            margin: 0 2.5rem;
+        }
+}   
+
+@media only screen and (min-width:1351px) and (max-width: 1600px){
+.name-tag{
+    font-size: 1.5rem;
+}
+.left-section-contents{
+    font-size: 1rem;
+}
+}   
