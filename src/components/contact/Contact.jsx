@@ -43,7 +43,6 @@ const Contact = () => {
             <a href="https://github.com/ZimmerKennedy" target="_blank">
             <img className="contact-image" src="/miscImg/githubLogo.png" alt="github"/>
             </a>
-            {/* <img className="contact-image" src="/miscImg/resumeLogo.png" alt="resume" onClick={downloadResume}/> */}
             <img
         className="contact-image"
         src="/miscImg/resumeLogo.png"

@@ -72,7 +72,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,3 +113,62 @@
     cursor: pointer;
     color: #ff5277;
   }
+
+  @media only screen and (max-width: 379px){
+    #top-section-contact{
+      margin-left: 1rem;
+      font-size: 1.5rem;
+    }
+    #get-in-touch{
+      margin-top: 4rem;
+    }
+    .contact-image{
+      width: 5rem;
+    }
+    .preview-content{
+      width: 20rem;
+      height: 25rem;
+    }
+    .close-icon{
+      position: absolute;
+      top: 6rem;
+      left: 75%;
+      font-size: 2rem;
+    }
+    .download-icon{
+      position: absolute;
+      bottom: 6rem;
+      right: 57%;
+      font-size: 2rem;
+    }
+}
+
+
+@media only screen and (min-width:380px) and (max-width: 1350px){
+  #top-section-contact{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+  #get-in-touch{
+    margin-top: 4rem;
+  }
+  .contact-image{
+    width: 5rem;
+  }
+  .preview-content{
+    width: 20rem;
+    height: 30rem;
+  }
+  .close-icon{
+    position: absolute;
+    top: 9rem;
+    left: 75%;
+    font-size: 2rem;
+  }
+  .download-icon{
+    position: absolute;
+    bottom: 9rem;
+    right: 57%;
+    font-size: 2rem;
+  }
+}
