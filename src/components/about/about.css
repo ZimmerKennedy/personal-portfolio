@@ -7,7 +7,7 @@
 }
 
 #left-section-about{
-    background-color: black;
+    background-color: #111;
     flex: 1.5;
     height: 100%;
     display: flex;
@@ -40,7 +40,7 @@
 }
 
 #middle-section-about{
-    background-color:black;
+    background-color:#111;
     flex: 2;
     height: 100%;
     display: flex;
@@ -49,7 +49,7 @@
 }
 
 #right-section-about{
-    background-color:black;
+    background-color:#111;
     height: 100%;
     flex: 1.5;
     display: flex;
@@ -86,13 +86,6 @@
 #right-section-render-contents-wrapper{
     height: 50%;
 }
-
-/* .right-section-contents:hover {
-    border: 1px solid #ff5277;
-    border-width: 1px 3px;
-    padding-left: 1.5rem;
-    cursor: pointer;
-} */
 
 #profileLogo {
     width: 100%;

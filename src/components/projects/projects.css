@@ -1,5 +1,5 @@
 #projects-container{
-    background-color: black;
+  background-color: black;
     height: 100vh;
     position: relative;
 }
@@ -63,7 +63,7 @@
 }
 
 .projects-title-left, .projects-title-right{
-    font-size: 1.5rem;
+    font-size: 0;
 }
 
 .projects-techstack-arti-images,
@@ -129,15 +129,19 @@
 
 .project1-section:hover .projects-title-left {
     color: white;
+    font-size: 1.5rem;
   }
   .project3-section:hover .projects-title-left {
     color: white;
+    font-size: 1.5rem;
   }
   .project2-section:hover .projects-title-right {
     color: white;
+    font-size: 1.5rem;
   }
   .project4-section:hover .projects-title-right {
     color: white;
+    font-size: 1.5rem;
   }
 
 .project1-section:hover .border-projects-arti .line-arti {

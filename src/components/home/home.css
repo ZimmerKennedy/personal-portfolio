@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  background-color: black;
+  background-color: #111;
 }
 
 
@@ -24,10 +24,8 @@
   font-size: 1.5rem;
   color:   #aaa;
 }
-
 .left-side-content-wrapper{
   margin: 0 0 40rem 2rem;
-  
 }
 
 
@@ -37,11 +35,11 @@
   justify-content: center;
   align-items: center;
   flex: 2;
-  background-color: black;
+  background-color: #111;
 }
 
 .middle-content-items{
-  color: #f5eee6;
+  color: #ca9558;
   font-size: 6rem;
   font-weight: bolder;
   line-height: 5rem;
@@ -53,7 +51,7 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  background-color: black;
+  background-color: #111;
 }
 
 .right-side-content-items{

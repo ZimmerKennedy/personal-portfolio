@@ -52,12 +52,12 @@ const About = () => {
         <div children="render-images-container">
                <img className="backend-images" draggable="false" src="/backendImg/expressLogo.png" alt="ExpressLogo"/>
                <img className="backend-images" draggable="false" src="/backendImg/nodejsLogo.png" alt="NodeJsLogo" />
-               <img className="backend-images" draggable="false" src="/backendImg/psqlLogo.png" alt="PSQLLogo" />
+               <img className="backend-images" draggable="false" src="/backendImg/psqlOutline.png" alt="PSQLLogo" />
             </div>
           </div>}
         {activeCategory === "misc" && <div id="misc-contents">
         <div className="render-images-container">
-               <img className="misc-images" draggable="false" src="/miscImg/apisLogo.png" alt="apisLogo"/>
+               <img className="misc-images" draggable="false" src="/miscImg/restAPILogo.png" alt="apisLogo"/>
                <img className="misc-images" draggable="false" src="/miscImg/bashLogo.png" alt="bashLogo" />
                <img className="misc-images" draggable="false" src="/miscImg/excalidrawLogo.png" alt="excalidrawLogo" />
                <img className="misc-images" draggable="false" src="/miscImg/figmaLogo.png" alt="figmaLogo" />
@@ -65,7 +65,7 @@ const About = () => {
                <img className="misc-images" draggable="false" src="/miscImg/gitLogo.png" alt="gitLogo" />
                <img className="misc-images" draggable="false" src="/miscImg/npmLogo.png" alt="npmLogo" />
                <img className="misc-images" draggable="false" src="/miscImg/postmanLogo.png" alt="postmanLogo" />
-               <img className="misc-images" draggable="false" src="/miscImg/viteLogo.jpg" alt="viteLogo" />
+               <img className="misc-images" draggable="false" src="/miscImg/viteLogo.png" alt="viteLogo" />
                <img className="misc-images" draggable="false" src="/miscImg/webpackLogo.png" alt="webpackLogo" />
             </div>
           </div>}
