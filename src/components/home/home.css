@@ -66,7 +66,7 @@
     }
     .middle-section-content-words{
       font-size: 2rem;
-      margin-left: 13rem;
+      margin-left: 33rem;
     }
     .bottom-section-contents{
       font-size: 1rem;
@@ -103,4 +103,11 @@
     flex-direction: column;
     margin-bottom: 10rem;
   }  
-}   
+}
+@media only screen and (min-width:1601px) and (max-width: 1700px){
+    .top-section-contents,.bottom-section-contents{
+      width: 15rem;
+      font-size: 1.5;
+      margin: 0 12rem;
+    }
+  }   

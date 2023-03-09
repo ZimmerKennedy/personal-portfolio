@@ -286,3 +286,16 @@
 .github-project-youNo:hover{
 opacity: 0.7;
 }
+
+@media only screen and (max-width: 768px){
+
+}
+
+
+@media only screen and (min-width:769px) and (max-width: 1350px){
+
+}   
+
+@media only screen and (min-width:1351px) and (max-width: 1700px){
+
+}   
