@@ -226,12 +226,11 @@
        }
        .name-tag{
         font-size: 1rem;
-        margin: 5rem 0 0 0;
+        margin: 6rem 0 0 0;
         padding: 0;
        }
        #profileLogo{
-        height: 5rem;
-        width: 5rem;
+        height: 70%;
         object-fit: contain;
        }
        #right-section-about{
