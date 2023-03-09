@@ -221,18 +221,18 @@
        } 
        .left-section-contents{
         font-size: 0.5rem;
-        margin: 0.5rem;
+        margin: 0.5rem 2rem;
         line-height: normal;
        }
        .name-tag{
         font-size: 1rem;
-        margin: 0;
-       }
-       #middle-section-about{
-        height: 15rem;
+        margin: 5rem 0 0 0;
+        padding: 0;
        }
        #profileLogo{
-        height: 10rem;
+        height: 5rem;
+        width: 5rem;
+        object-fit: contain;
        }
        #right-section-about{
         height: 2rem;
@@ -241,8 +241,8 @@
         font-size: 1rem;
        }
        .frontend-images, .backend-images,.misc-images{
-        height: 2rem;
-        width: 2rem;
+        height: 3rem;
+        width: 3rem;
         object-fit: contain;
        }
        .misc-images:last-child{
