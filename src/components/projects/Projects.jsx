@@ -80,7 +80,7 @@ const Projects = () => {
                   />
                   <img
                     className="projects-techstack-arti-images"
-                    src="/miscImg/viteLogo.jpg"
+                    src="/miscImg/viteLogo.png"
                   />
                   <img
                     className="projects-techstack-arti-images"
@@ -157,8 +157,8 @@ const Projects = () => {
                   />
                   <img
                     className="projects-techstack-openShop-images"
-                    src="/backendImg/psqlLogo.png"
-                    alt="psqlLogo"
+                    src="/backendImg/psqlOutline.png"
+                    alt="psqlOutline"
                   />
                   <img
                     className="projects-techstack-openShop-images"
@@ -242,8 +242,8 @@ const Projects = () => {
                   />
                   <img
                     className="projects-techstack-pangea-images"
-                    src="/backendImg/psqlLogo.png"
-                    alt="psqlLogo"
+                    src="/backendImg/psqlOutline.png"
+                    alt="psqlOutline"
                   />
                   <img
                     className="projects-techstack-pangea-images"

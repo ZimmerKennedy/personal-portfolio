@@ -4,10 +4,11 @@
 
 
 #mainpage-container{
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .section {
