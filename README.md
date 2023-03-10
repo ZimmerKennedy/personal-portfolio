@@ -1,7 +1,5 @@
 # Personal Portfolio Website
 
-![](./screenshot.png)
-
 This is my personal portfolio website showcasing my skills and experience as a software engineer. It was built using React and Vite, and deployed using Vercel.
 
 ## Features
