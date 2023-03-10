@@ -6,12 +6,12 @@ const Home = () => {
   const [matchedWords, setMatchedWords] = useState([]);
 
   const words = [
-    "Creative",
+    "Fitness Enthusiast",
     "Software Engineer",
     "Full-Stack Developer",
-    "Web App Developer",
-    "Front-End Developer",
-    "Back-End Developer",
+    "Code",
+    "Create",
+    "Innovate",
     "Zimmer Kennedy"
   ];
 
@@ -40,8 +40,8 @@ const Home = () => {
   return (
     <div id="home-container">
       <section id="top-section">
-      {matchedWords.includes("Creative") && (
-          <div className="top-section-contents">Creative</div>
+      {matchedWords.includes("Fitness Enthusiast") && (
+          <div className="top-section-contents">Fitness Enthusiast</div>
         )}
         {matchedWords.includes("Software Engineer") && (
           <div className="top-section-contents">Software Engineer</div>
@@ -54,14 +54,14 @@ const Home = () => {
         <div className="middle-section-content-words font3">{words[wordIndex]}</div>
       </section>
       <section id="bottom-section">
-          {matchedWords.includes("Web App Developer") && (
-          <div className="bottom-section-contents ">Web App Developer</div>
+          {matchedWords.includes("Code") && (
+          <div className="bottom-section-contents ">Code.</div>
         )}
-        {matchedWords.includes("Front-End Developer") && (
-          <div className="bottom-section-contents ">Front-End Developer</div>
+        {matchedWords.includes("Create") && (
+          <div className="bottom-section-contents ">Create.</div>
         )}
-        {matchedWords.includes("Back-End Developer") && (
-          <div className="bottom-section-contents ">Back-End Developer</div>
+        {matchedWords.includes("Innovate") && (
+          <div className="bottom-section-contents ">Innovate.</div>
         )}
       </section>
     </div>
