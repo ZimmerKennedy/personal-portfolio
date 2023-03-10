@@ -9,9 +9,9 @@ const Home = () => {
     "Fitness Enthusiast",
     "Software Engineer",
     "Full-Stack Developer",
-    "Code",
-    "Create",
-    "Innovate",
+    "Code.",
+    "Create.",
+    "Innovate.",
     "Zimmer Kennedy"
   ];
 
@@ -54,13 +54,13 @@ const Home = () => {
         <div className="middle-section-content-words font3">{words[wordIndex]}</div>
       </section>
       <section id="bottom-section">
-          {matchedWords.includes("Code") && (
+          {matchedWords.includes("Code.") && (
           <div className="bottom-section-contents ">Code.</div>
         )}
-        {matchedWords.includes("Create") && (
+        {matchedWords.includes("Create.") && (
           <div className="bottom-section-contents ">Create.</div>
         )}
-        {matchedWords.includes("Innovate") && (
+        {matchedWords.includes("Innovate.") && (
           <div className="bottom-section-contents ">Innovate.</div>
         )}
       </section>
