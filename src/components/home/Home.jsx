@@ -6,13 +6,12 @@ const Home = () => {
   const [matchedWords, setMatchedWords] = useState([]);
 
   const words = [
-    "Fitness Enthusiast",
-    "Software Engineer",
-    "Full-Stack Developer",
+    // "Fitness Enthusiast",
+    // "Full-Stack Developer",
     "Code.",
     "Create.",
     "Innovate.",
-    "Zimmer Kennedy"
+    "Zimmer Kennedy",
   ];
 
   useEffect(() => {
@@ -32,7 +31,10 @@ const Home = () => {
   }, [wordIndex, words]);
 
   useEffect(() => {
-    if (words[wordIndex] !== undefined && !matchedWords.includes(words[wordIndex])) {
+    if (
+      words[wordIndex] !== undefined &&
+      !matchedWords.includes(words[wordIndex])
+    ) {
       setMatchedWords([...matchedWords, words[wordIndex]]);
     }
   }, [wordIndex, words, matchedWords]);
@@ -40,32 +42,53 @@ const Home = () => {
   return (
     <div id="home-container">
       <section id="top-section">
-      {matchedWords.includes("Fitness Enthusiast") && (
-          <div className="top-section-contents">Fitness Enthusiast</div>
-        )}
-        {matchedWords.includes("Software Engineer") && (
-          <div className="top-section-contents">Software Engineer</div>
-        )}
-        {matchedWords.includes("Full-Stack Developer") && (
-          <div className="top-section-contents">Full-Stack Developer</div>
-        )}
-      </section>
-      <section id="middle-section">
-        <div className="middle-section-content-words font3">{words[wordIndex]}</div>
-      </section>
-      <section id="bottom-section">
-          {matchedWords.includes("Code.") && (
-          <div className="bottom-section-contents ">Code.</div>
+        {matchedWords.includes("Code.") && (
+          <div className="top-section-home ">Code.</div>
         )}
         {matchedWords.includes("Create.") && (
-          <div className="bottom-section-contents ">Create.</div>
+          <div className="top-section-home ">Create.</div>
         )}
         {matchedWords.includes("Innovate.") && (
-          <div className="bottom-section-contents ">Innovate.</div>
+          <div className="top-section-home ">Innovate.</div>
         )}
+      </section>
+
+      <section id="middle-section">
+        {matchedWords.includes("Zimmer Kennedy") && (
+          <div className="middle-section-home">Full-Stack Developer</div>
+        )}
+        {/* {matchedWords.includes("Zimmer Kennedy") && (
+          <div className="middle-section-home">Fitness Enthusiast</div>
+        )} */}
+      </section>
+      <section id="bottom-section">
+        <div className="bottom-section-home font3">
+          {words[wordIndex]}
+        </div>
       </section>
     </div>
   );
 };
 
 export default Home;
+
+// import React, {useState, useEffect} from "react";
+// import "./home.css";
+
+// const Home = () => {
+
+//   const words = [
+//     "Fitness Enthusiast",
+//     "Full-Stack Developer",
+//     "Code.",
+//     "Create.",
+//     "Innovate.",
+//     "Zimmer Kennedy"
+//   ];
+
+//   return (
+//     <div>Home</div>
+//   )
+// }
+
+// export default Home
