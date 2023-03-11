@@ -62,10 +62,10 @@ const Contact = () => {
         src="/resumeFirstPage.png"
         alt="resume preview"
       />
-      <img
+      {/* <img
         src="/resume2ndPage.png"
         alt="resume preview"
-      />
+      /> */}
     </div>
   </div>
 )}
