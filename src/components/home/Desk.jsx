@@ -10,8 +10,18 @@ Title: Cyberpunk Desk
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Model(props) {
+export default function Model(props) {
   const { nodes, materials } = useGLTF('/desk-transformed.glb')
+  
+  // Set the color of each material to #ff5277
+  materials['1041'].color.set('#111')
+  materials['1042'].color.set('#111')
+  materials['1043'].color.set('#111')
+  materials['1053'].color.set('#111')
+  materials['1054'].color.set('#111')
+  materials['1055'].color.set('#111')
+  materials['1045'].color.set('#111')
+  
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
