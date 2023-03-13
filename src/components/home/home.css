@@ -1,13 +1,12 @@
- #home-container {
+ /* #home-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
   width: 100%;
   position: relative;
-  background-color:  #111;
 }
 
 #top-section{
@@ -30,23 +29,29 @@
   display: flex;
   color: #aaa;
   font-size: 2rem;
+  flex-direction: column;
 }
 
 .middle-section-home{
   margin: 0 1rem;
   letter-spacing: 0.5rem;
+  color: #aaa;
+  font-size: 2rem;
 }
 #bottom-section{
   flex:1;
   flex-shrink: 0;
+  background-color: white;
+  height: 100%;
+  width: 100%;
 }
 
 .bottom-section-home{
   color: #ca9558;
-  font-size: 10rem;
+  font-size: 5rem;
   font-weight: bolder;
   letter-spacing: 1rem;
-}
+} */
 
 @media only screen and (max-width: 389px){
   #top-section{
@@ -89,3 +94,74 @@
     letter-spacing: 0.4rem;
   }
 } 
+
+
+/* #try{
+  position: absolute;
+  font-size: 10rem;
+  top: 0;
+  left: 0;
+
+  color: transparent;
+  -webkit-text-stroke: 1px snow;
+}
+#try1{
+  position: absolute;
+  font-size: 13rem;
+  color: transparent;
+  -webkit-text-stroke: 0.2px gray;
+}
+#try2{
+  position: absolute;
+  font-size: 10.5rem;
+  bottom: 0;
+  color: transparent;
+  -webkit-text-stroke: 0.2px gray;
+} */
+
+#home-container{
+  display: flex;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#left-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  color: transparent;
+  -webkit-text-stroke: 1px snow;
+  font-size: 4.5rem;
+  letter-spacing: 0.5rem;
+  background-color: #111;
+}
+
+#right-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  height: 100%;
+  background-color: rgb(255, 249, 249);
+}
+
+.right-section-words{
+  color: #ca9558;
+  font-size: 5rem;
+  font-weight:900;
+  letter-spacing: 1rem;
+}
+.right-section-title{
+  margin: 0 1rem;
+  letter-spacing: 0.5rem;
+  color: black;
+  font-weight: 900;
+  font-size: 2rem;
+}

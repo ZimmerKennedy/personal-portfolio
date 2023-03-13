@@ -18,19 +18,9 @@ const Navbar = () => {
   return (
     <nav>
       <div id="navbar-container">
-        <div className="left-side-navbar">
-          <span className="left-side-navbar-items font3"  onClick={() => handleNavItemClick("section1")}>ZIMMER KENNEDY</span>
-          <span className="left-side-navbar-items font3"  onClick={() => handleNavItemClick("section2")}>
-            FULL STACK DEVELOPER
-          </span>
-        </div>
-
-        {/* Render hamburger menu only on small screens */}
         <div className="hamburger-menu">
           <GiHamburgerMenu onClick={handleToggleNavbar} />
         </div>
-
-        {/* Render navbar items on large screens */}
         <div className={`right-side-navbar ${toggleNavbar ? "show" : ""}`}>
           <span className="right-side-navbar-items font3" onClick={() => handleNavItemClick("section1")}>Home</span>
           <span className="right-side-navbar-items font3" onClick={() => handleNavItemClick("section2")}>About</span>
