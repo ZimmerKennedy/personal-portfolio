@@ -14,13 +14,12 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/desk-transformed.glb')
   
   // Set the color of each material to #ff5277
-  materials['1041'].color.set('#111')
-  materials['1042'].color.set('#111')
-  materials['1043'].color.set('#111')
-  materials['1053'].color.set('#111')
-  materials['1054'].color.set('#111')
-  materials['1055'].color.set('#111')
-  materials['1045'].color.set('#111')
+  materials['1041'].color.set('#aaa')
+  materials['1042'].color.set('black')
+  materials['1053'].color.set('#ff5277')
+  materials['1054'].color.set('#ff5277')
+  materials['1055'].color.set('#ff5277')
+  materials['1045'].color.set('#aaa')
   
   return (
     <group {...props} dispose={null}>

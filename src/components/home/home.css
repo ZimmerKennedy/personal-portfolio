@@ -3,9 +3,25 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: black;
 }
 
 #desk-section{
   width: 100rem;
-  height: 70rem;
+  height: 100vh;
+}
+.LinkedInLogo-mesh:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  #desk-section {
+    height: 40vh;
+  }
+}
+
+@media screen and(min-width: 376px) and(max-width:1005px){
+  #desk-section {
+    height: 40vh;
+  }
 }

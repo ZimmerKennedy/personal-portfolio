@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { OrbitControls, Stage, Environment, Text } from '@react-three/drei';
-import { Canvas } from '@react-three/fiber';
-import Desk from './Desk';
-import './home.css';
+import React, { useState, useEffect } from "react";
+import { OrbitControls, Stage, Environment, Text } from "@react-three/drei";
+import { Canvas, useLoader } from "@react-three/fiber";
+import { TextureLoader, LinearFilter } from "three";
+import linkedInLogo from "/miscImg/linkedInLogo.png";
+import githubLogo from "/miscImg/githubLogo.png";
+import Desk from "./Desk";
+import "./home.css";
 
 const Home = () => {
   const words = ["Code.", "Create.", "Innovate.", "Zimmer Kennedy"];
@@ -24,8 +27,8 @@ const Home = () => {
 
     return () => clearInterval(intervalId);
   }, [wordIndex, words]);
-  
-    useEffect(() => {
+
+  useEffect(() => {
     if (
       words[wordIndex] !== undefined &&
       !matchedWords.includes(words[wordIndex])
@@ -34,67 +37,122 @@ const Home = () => {
     }
   }, [wordIndex, words, matchedWords]);
 
-
+  const linkedInLogoTexture = useLoader(TextureLoader, linkedInLogo);
+  const githubLogoTexture = useLoader(TextureLoader, githubLogo);
+  githubLogoTexture.magFilter = LinearFilter;
+  githubLogoTexture.minFilter = LinearFilter;
   return (
     <div id="home-container">
       <section id="desk-section">
-        <Canvas camera={{ position: [0, 0.5, 1], fov: 50 }}>
-          <ambientLight intensity={0.5} />
-          <pointLight position={[5, 5, 5]} intensity={1} />
+        <Canvas camera={{ position: [0, 0.4, 1], fov: 50 }}>
+          <ambientLight intensity={0.3} />
+          <pointLight position={[10, 10, 10]} intensity={5} color="black" />
+          <pointLight position={[-10, -10, -10]} intensity={2} color="black" />
+          <pointLight position={[0, 10, 0]} intensity={5} color="#aaa" />
           <Stage>
             <Desk />
             <Environment preset="city" />
-            <OrbitControls enablePan={false} enableZoom={false}/>
+            <OrbitControls enablePan={false} enableZoom={false} />
           </Stage>
+
           {matchedWords.includes("Code.") && (
-          <Text
-          position={[-1.98, 1.85, -0.5]}
-          rotation={[0, 0.2, 0]}
-          fontSize={0.1}
-          color="#ca9558"
-          anchorX="center"
-          anchorY="middle"
-          textAlign="left"
-        >
-            Code.
-          </Text>
-        )}
-        {matchedWords.includes("Create.") && (
-          <Text
-          position={[-1.95, 1.75, -0.5]}
-          rotation={[0, 0.2, 0]}
-          fontSize={0.1}
-          color="#ca9558"
-          anchorX="center"
-          anchorY="middle"
-          textAlign="left"
-          >
-            Create.
-          </Text>
-        )}
-        {matchedWords.includes("Innovate.") && (
-          <Text
-          position={[-1.90, 1.65, -0.5]}
-          rotation={[0, 0.2, 0]}
-          fontSize={0.1}
-          color="#ca9558"
-          anchorX="center"
-          anchorY="middle"
-          textAlign="left"
-          >
-            Innovate.
-          </Text>
-        )}
+            <Text
+              position={[-1.98, 1.85, -0.5]}
+              rotation={[0, 0.2, 0]}
+              fontSize={0.1}
+              color="#aaa"
+              anchorX="center"
+              anchorY="middle"
+              textAlign="left"
+            >
+              Code.
+            </Text>
+          )}
+          {matchedWords.includes("Create.") && (
+            <Text
+              position={[-1.95, 1.75, -0.5]}
+              rotation={[0, 0.2, 0]}
+              fontSize={0.1}
+              color="#aaa"
+              anchorX="center"
+              anchorY="middle"
+              textAlign="left"
+            >
+              Create.
+            </Text>
+          )}
+          {matchedWords.includes("Innovate.") && (
+            <Text
+              position={[-1.9, 1.65, -0.5]}
+              rotation={[0, 0.2, 0]}
+              fontSize={0.1}
+              color="#aaa"
+              anchorX="center"
+              anchorY="middle"
+              textAlign="left"
+            >
+              Innovate.
+            </Text>
+          )}
+          {matchedWords.includes("Zimmer Kennedy") && (
+            <Text
+              position={[0, 1.3, 0]}
+              fontSize={0.2}
+              color="#ff5277"
+              anchorX="center"
+              anchorY="middle"
+              textAlign="left"
+            >
+              Full-Stack Developer
+            </Text>
+          )}
           <Text
             position={[0, 1, 0]}
             fontSize={0.5}
-            color="#ca9558"
+            color="white"
             anchorX="center"
             anchorY="middle"
             textAlign="center"
+            ontFamily="'Inter Tight', 'Roboto Mono', 'Tourney', sans-serif"
           >
             {words[wordIndex]}
           </Text>
+
+          <group
+            onClick={(e) => {
+              window.open(
+                "https://www.linkedin.com/in/zimmerkennedy/",
+                "_blank"
+              );
+            }}
+            onPointerOver={(e) => {
+              setHover(true);
+            }}
+            onPointerOut={(e) => {
+              setHover(false);
+            }}
+          >
+            <mesh position={[0.3, 1.85, -0.85]}>
+              <planeGeometry args={[0.2, 0.2]} />
+              <meshBasicMaterial map={linkedInLogoTexture} />
+            </mesh>
+          </group>
+          <group
+            onClick={(e) => {
+              window.open("https://github.com/ZimmerKennedy", "_blank");
+            }}
+            onPointerOver={(e) => {
+              setHover(true);
+            }}
+            onPointerOut={(e) => {
+              setHover(false);
+            }}
+          >
+            <mesh position={[0.3, 1.55, -0.85]}>
+              <planeGeometry args={[0.2, 0.2]} />
+              <meshBasicMaterial map={githubLogoTexture} />
+            </mesh>
+          </group>
         </Canvas>
       </section>
     </div>
@@ -102,4 +160,3 @@ const Home = () => {
 };
 
 export default Home;
-
