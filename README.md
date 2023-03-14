@@ -17,3 +17,4 @@ This is my personal portfolio website showcasing my skills and experience as a s
 - CSS
 - JavaScript
 - Vercel
+- Three.js
