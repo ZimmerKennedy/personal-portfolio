@@ -1,91 +1,27 @@
- #home-container {
+#home-container{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
   height: 100%;
-  width: 100%;
-  position: relative;
-  background-color:  #111;
+  background-color: #0e0b0b;
 }
 
-#top-section{
-  color: transparent;
-  -webkit-text-stroke: 1px snow;
-  font-size: 4.5rem;
-  flex:1;
-  flex-shrink: 0;
-  display: flex;
-  margin-top: 10rem;
-  letter-spacing: 0.5rem;
+#desk-section{
+  width: 100rem;
+  height: 100vh;
 }
-#right-section{
-  flex:1;
-  flex-shrink: 0;
-}
-#middle-section{
-  flex:0;
-  flex-shrink: 0;
-  display: flex;
-  color: #aaa;
-  font-size: 2rem;
+.LinkedInLogo-mesh:hover {
+  cursor: pointer;
 }
 
-.middle-section-home{
-  margin: 0 1rem;
-  letter-spacing: 0.5rem;
-}
-#bottom-section{
-  flex:1;
-  flex-shrink: 0;
-}
-
-.bottom-section-home{
-  color: #ca9558;
-  font-size: 10rem;
-  font-weight: bolder;
-  letter-spacing: 1rem;
-}
-
-@media only screen and (max-width: 389px){
-  #top-section{
-    font-size: 1rem;
-  }
-  #middle-section{
-    font-size: 0.5rem;
-  }
-  .bottom-section-home{
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
+@media screen and (max-width: 375px) {
+  #desk-section {
+    height: 40vh;
   }
 }
 
-@media only screen and (min-width:390px) and (max-width: 800px){
-  #top-section{
-    font-size: 1rem;
-  }
-  #middle-section{
-    font-size: 0.5rem;
-  }
-  .bottom-section-home{
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
+@media screen and(min-width: 376px) and(max-width:1005px){
+  #desk-section {
+    height: 40vh;
   }
 }
-
-
-
-
-@media only screen and (min-width:801px) and (max-width: 899px){
-  #top-section{
-    font-size:2rem;
-  }
-  #middle-section{
-    font-size: 1rem;
-  }
-  .bottom-section-home{
-    font-size: 4rem;
-    letter-spacing: 0.4rem;
-  }
-} 

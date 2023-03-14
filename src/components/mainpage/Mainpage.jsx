@@ -4,17 +4,17 @@ import Home from "../home/Home";
 import "./mainpage.css";
 import Projects from "../projects/Projects";
 import Contact from "../contact/Contact";
+
+
 const Mainpage = () => {
   return ( 
 <div id="mainpage-container">
   <div id="section1" className="section" name="section1">
     <Home />
   </div>
-
   <div id="section2" className="section" name="section2">
     <About />
   </div>
-
   <div id="section3" className="section" name="section3">
     <Projects />
   </div>
