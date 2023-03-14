@@ -16,13 +16,15 @@
 
 @media screen and (max-width: 375px) {
   #desk-section {
-    height: 40vh;
-    touch-action: pan-y;
+    height: 20vh;
   }
+  
 }
 
 @media screen and(min-width: 376px) and(max-width:1005px){
   #desk-section {
-    height: 40vh;
+    height: 20vh;
   }
 }
+
+

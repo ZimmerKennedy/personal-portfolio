@@ -160,6 +160,7 @@ const Home = () => {
           </group>
         </Canvas>
       </section>
+      
     </div>
   );
 };
