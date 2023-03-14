@@ -18,8 +18,7 @@
   color: #ff5277;
 }
 
-.right-side-navbar-items:hover,
-.left-side-navbar-items:hover {
+.right-side-navbar-items:hover{
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -33,7 +32,7 @@
 @media only screen and (max-width: 576px) {
   #navbar-container{
     justify-content: right;
-    backdrop-filter: 10px;
+    background-color: rgba(54, 48, 48, 0.1);
   }
   .right-side-navbar {
     display: none;
