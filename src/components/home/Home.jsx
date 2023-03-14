@@ -9,6 +9,7 @@ import "./home.css";
 
 const Home = () => {
   const words = ["Code.", "Create.", "Innovate.", "Zimmer Kennedy"];
+  const [isLoading, setIsLoading] = useState(true);
   const [wordIndex, setWordIndex] = useState(0);
   const [matchedWords, setMatchedWords] = useState([]);
 
@@ -41,18 +42,22 @@ const Home = () => {
   const githubLogoTexture = useLoader(TextureLoader, githubLogo);
   githubLogoTexture.magFilter = LinearFilter;
   githubLogoTexture.minFilter = LinearFilter;
+
+
   return (
     <div id="home-container">
       <section id="desk-section">
         <Canvas camera={{ position: [0, 0.4, 1], fov: 50 }}>
-          <ambientLight intensity={0.3} />
-          <pointLight position={[10, 10, 10]} intensity={5} color="black" />
-          <pointLight position={[-10, -10, -10]} intensity={2} color="black" />
+          <ambientLight intensity={1} />
+          <pointLight position={[10, 10, 10]} intensity={5} color="#aaa" />
+          <pointLight position={[-10, -10, -10]} intensity={5} color="#aaa" />
           <pointLight position={[0, 10, 0]} intensity={5} color="#aaa" />
           <Stage>
             <Desk />
-            <Environment preset="city" />
+            <Environment preset="warehouse" />
             <OrbitControls enablePan={false} enableZoom={false} />
+
+            
           </Stage>
 
           {matchedWords.includes("Code.") && (
