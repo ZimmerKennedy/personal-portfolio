@@ -95,6 +95,36 @@
     margin-right: 10rem;
   }
 }
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+  #projects-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-section, .right-section{
+    height: 20rem;
+    width: 20rem;
+    margin: 0 0 0 15rem;
+  }
+  #try, #try1{
+    display: none;
+  }
+  .preview {
+    position: fixed;
+    top: 0;
+    left: 0;  
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    border: 1px solid white;
+  }
+  .close-preview{
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    margin-right: 10rem;
+  }
+}
 
 
 
