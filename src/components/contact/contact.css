@@ -161,7 +161,7 @@
   }
   .close-icon{
     position: absolute;
-    top: 9rem;
+    top: 23%;
     left: 75%;
     font-size: 2rem;
   }
@@ -170,5 +170,11 @@
     bottom: 9rem;
     right: 57%;
     font-size: 2rem;
+  }
+  .close-icon{
+    color: #ff5277;
+  }
+  .download-icon{
+    display: none;
   }
 }

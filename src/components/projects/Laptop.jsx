@@ -12,6 +12,18 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/laptop-transformed.glb')
+
+  materials['Material.001'].color.set('black')
+  materials['Material.002'].color.set('black')
+  materials['Material.003'].color.set('white')
+  materials['Material.004'].color.set('#ff5277')
+  materials['Material.006'].color.set('white')
+  materials['Material.013'].color.set('#111')
+  materials['Material.010'].color.set('#ff5277')
+  materials['Material.005'].color.set('#ff5277')
+
+  
+
   return (
     <group {...props} dispose={null}>
       <group position={[-1.2, 0.1, 0]} rotation={[0, 0, -1.38]}>

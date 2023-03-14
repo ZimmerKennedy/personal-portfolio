@@ -12,6 +12,11 @@ import {
   ClampToEdgeWrapping,
 } from "three";
 import Laptop from "./Laptop";
+import ArtiProject from "./projectsPreviews/ArtiProject";
+import OpenShopProject from "./projectsPreviews/OpenShopProject";
+import YouNoProject from "./projectsPreviews/YouNoProject";
+import PangeaProject from "./projectsPreviews/PangeaProject";
+
 const Projects = () => {
   const artiProjectTexture = useLoader(
     TextureLoader,
@@ -24,7 +29,7 @@ const Projects = () => {
   artiProjectTexture.anisotropy = 500;
   const pangeaProjectTexture = useLoader(
     TextureLoader,
-    "/projectsImg/openShopProject.png"
+    "/projectsImg/pangeaProject.png"
   );
   pangeaProjectTexture.magFilter = LinearFilter;
   pangeaProjectTexture.minFilter = LinearFilter;
@@ -42,7 +47,7 @@ const Projects = () => {
   youNoProjectTexture.wrapT = ClampToEdgeWrapping;
   const openShopProjectTexture = useLoader(
     TextureLoader,
-    "/projectsImg/pangeaProject.png"
+    "/projectsImg/openShopProject.png"
   );
   openShopProjectTexture.magFilter = LinearFilter;
   openShopProjectTexture.minFilter = LinearFilter;
@@ -59,6 +64,7 @@ const Projects = () => {
     setShowArti(true);
     console.log(`i worked`);
   };
+
   const handlePangeaClick = () => {
     setsetShowPangea(true);
     console.log(`i worked`);
@@ -81,27 +87,20 @@ const Projects = () => {
     <div id="projects-wrapper">
       <div id="left-section-container">
         <section className="left-section">
-          <Canvas camera={{ position: [1, 0.4, 0], fov: 40 }}>
-            <ambientLight intensity={0.2} />
-            <directionalLight
-              intensity={1}
-              position={[0, 10, 0]}
-              color={0xffffff}
-            />
-
+          <div id="try" className="font3">
+            Pro<span id="try1">ject</span>
+          </div>
+          <Canvas camera={{ position: [1, 0.4, 0], fov: 30 }}>
+            <ambientLight intensity={1} />
             <Stage>
               <Laptop
                 position={[0, -1.6, 0]}
                 scale={[4, 5, 5]}
-                onClick={handleArtiClick}
+                onClick={handleOpenShopClick}
               />
               <mesh position={[-5.9, 6, 0]} rotation={[0, 0, 0.16]}>
                 <boxGeometry args={[0, 10.5, 19.5]} />
-                <meshBasicMaterial
-                  map={artiProjectTexture}
-                  magFilter={LinearFilter}
-                  minFilter={LinearFilter}
-                />
+                <meshBasicMaterial map={openShopProjectTexture} />
               </mesh>
               <Environment preset="city" />
               <OrbitControls
@@ -110,6 +109,8 @@ const Projects = () => {
                 enableDamping={true}
                 dampingFactor={0.1}
                 rotateSpeed={0.3}
+                target={[0, 0, 0]}
+                initialPosition={[0, 0, 50]}
               />
             </Stage>
           </Canvas>
@@ -166,25 +167,24 @@ const Projects = () => {
                 enableDamping={true}
                 dampingFactor={0.1}
                 rotateSpeed={0.3}
-                target={[0, 0, 0]} // set target to center on the laptop
-                initialPosition={[0, 0, 50]} // set initial position to zoom in on the laptop
+                target={[0, 0, 0]}
+                initialPosition={[0, 0, 50]}
               />
             </Stage>
           </Canvas>
         </section>
         <section className="right-section">
-          <Canvas camera={{ position: [1, 0.4, 0], fov: 40 }}>
+          <Canvas camera={{ position: [1, 0.4, 0], fov: 30 }}>
             <ambientLight intensity={1} />
-
             <Stage>
               <Laptop
                 position={[0, -1.6, 0]}
                 scale={[4, 5, 5]}
-                onClick={handleOpenShopClick}
+                onClick={handleArtiClick}
               />
               <mesh position={[-5.9, 6, 0]} rotation={[0, 0, 0.16]}>
                 <boxGeometry args={[0, 10.5, 19.5]} />
-                <meshBasicMaterial map={openShopProjectTexture} />
+                <meshBasicMaterial map={artiProjectTexture} />
               </mesh>
               <Environment preset="city" />
               <OrbitControls
@@ -193,15 +193,45 @@ const Projects = () => {
                 enableDamping={true}
                 dampingFactor={0.1}
                 rotateSpeed={0.3}
+                target={[0, 0, 0]}
+                initialPosition={[0, 0, 50]}
               />
             </Stage>
           </Canvas>
         </section>
       </div>
-      {showArti && <div></div>}
-      {showOpenShop && <div></div>}
-      {showPangea && <div></div>}
-      {showYouNo && <div></div>}
+      {showArti && (
+        <div className="preview">
+          <ArtiProject />
+          <div className="close-preview" onClick={handleClose}>
+            Exit
+          </div>
+        </div>
+      )}
+      {showOpenShop && (
+        <div className="preview">
+          <OpenShopProject />
+          <div className="close-preview" onClick={handleClose}>
+            Exit
+          </div>
+        </div>
+      )}
+      {showPangea && (
+        <div className="preview">
+          <PangeaProject />
+          <div className="close-preview" onClick={handleClose}>
+            Exit
+          </div>
+        </div>
+      )}
+      {showYouNo && (
+        <div className="preview">
+          <YouNoProject />
+          <div className="close-preview" onClick={handleClose}>
+            Exit
+          </div>
+        </div>
+      )}
     </div>
   );
 };

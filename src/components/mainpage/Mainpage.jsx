@@ -4,7 +4,8 @@ import Home from "../home/Home";
 import "./mainpage.css";
 import Projects from "../projects/Projects";
 import Contact from "../contact/Contact";
-import Test from "../test/Test";
+
+
 const Mainpage = () => {
   return ( 
 <div id="mainpage-container">
@@ -19,9 +20,6 @@ const Mainpage = () => {
   </div>
   <div id="section4" className="section" name="section4">
     <Contact />
-  </div>
-  <div id="sectionTest" className="section" name="sectionTest">
-    <Test />
   </div>
 </div> 
   );

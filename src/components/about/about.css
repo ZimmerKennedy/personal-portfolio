@@ -179,6 +179,7 @@
         flex-direction: column;
         height: 70%;
        } 
+       
        .left-section-contents{
         font-size: 0.5rem;
         margin: 0.5rem;
@@ -196,6 +197,7 @@
        }
        #right-section-about{
         height: 2rem;
+        background-color: #111;
        }
        .right-section-contents{
         font-size: 1rem;
