@@ -109,7 +109,7 @@ const Home = () => {
           <Text
             position={[0, 1, 0]}
             fontSize={0.5}
-            color="white"
+            color="#ff5277"
             anchorX="center"
             anchorY="middle"
             textAlign="center"
