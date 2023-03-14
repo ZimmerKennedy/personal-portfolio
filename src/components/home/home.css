@@ -17,6 +17,7 @@
 @media screen and (max-width: 375px) {
   #desk-section {
     height: 40vh;
+    touch-action: pan-y;
   }
 }
 
