@@ -14,16 +14,17 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 450px) {
   #desk-section {
     height: 20vh;
   }
   
 }
 
-@media screen and(min-width: 376px) and(max-width:1005px){
+@media only screen and (min-width: 456px) and (max-width:1005px){
+  
   #desk-section {
-    height: 20vh;
+    height: 40vh;
   }
 }
 
