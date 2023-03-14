@@ -74,11 +74,4 @@ const About = () => {
     </div>
   );
 };
-
-// //         <div className="left-section-contents font3">
-// I'm excited to bring my skills and experience to your project and help
-// bring your vision to life through clean, efficient, and effective
-// code. Let's work together to build something great!
-// </div>
-
 export default About;
